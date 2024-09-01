@@ -3,27 +3,24 @@ public class Main {
         System.out.println();
         //Задача 1
         System.out.println("Задача 1");
-        int clientOC = 0;
-    if (clientOC == 0){
-        System.out.println("Установите версию приложения для iOS по ссылке");
-    }
+        int clientOS = 0;
+    if (clientOS == 0){
+        System.out.println("Установите версию приложения для iOS по ссылке");}
         else {
-        System.out.println("Установите версию приложения для Android по ссылке");
-    }
+        System.out.println("Установите версию приложения для Android по ссылке");}
         System.out.println();
     //Задача 2
         System.out.println("Задача 2");
         int clientDeviceYear = 2014;
-        int clientOC1 = 0;
-        if (clientOC1 == 0 && clientDeviceYear < 2015){
+        int clientOS1 = 0;
+        if (clientOS1 == 0 && clientDeviceYear < 2015){
                 System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-            } else if (clientOC1 == 0 && clientDeviceYear >= 2015) {
+            } else if (clientOS1 == 0 && clientDeviceYear >= 2015) {
                 System.out.println("Установите версию приложения для iOS по ссылке");
-            } else if (clientOC1 == 1 && clientDeviceYear < 2015){
+            } else if (clientOS1 == 1 && clientDeviceYear < 2015){
                     System.out.println("Уcтановите облегченную версию приложения для Android по ссылке");
                 } else {
-                    System.out.println("Установите версию приложения для Android по ссылке");
-        }
+                    System.out.println("Установите версию приложения для Android по ссылке");}
         System.out.println();
         //Задача 3
         System.out.println("Задача 3");
@@ -31,14 +28,12 @@ public class Main {
         if (year>1584 && ((year % 4 == 0 && year % 100 != 0) || year % 400 ==0)) {
             System.out.println( year+" год является високосным");
         } else {
-            System.out.println( year+" год не является високосным");
-        }
+            System.out.println( year+" год не является високосным");}
         System.out.println();
         //Задача 4
         System.out.println("Задача 4");
-
         int deliveryDistance = 95;
-        if (deliveryDistance <-20){
+        if (deliveryDistance <=20){
             System.out.println("Потребуется дней:" + 1);
         } else if (deliveryDistance>20 && deliveryDistance<=60) {
             System.out.println("Потребуется дней:" + 2);
@@ -49,8 +44,8 @@ public class Main {
         System.out.println();
         //Задача 5
         System.out.println("Задача 5");
-        int mounthNumber =12;
-        switch (mounthNumber){
+        int monthNumber =12;
+        switch (monthNumber){
             case 1 :
             case 2 :
             case 12:
@@ -72,7 +67,6 @@ public class Main {
                 System.out.println("Осень");
                 break;
             default:
-                System.out.println("Не существует такого месяца!");
-        }
+                System.out.println("Не существует такого месяца!");}
     }
 }
